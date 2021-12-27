@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.LoginActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:maxButtonHeight="20dp"
+        app:titleMargin="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="7dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#2c2c2c"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/iv_qr_code"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_qr_code" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--        <include layout="@layout/widget_stepview"/>-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="TIXIT"
+            android:textColor="#21B828"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:gravity="center"
+            android:text="TITAN系统产品安装专用APP"
+            android:textColor="#BCBCBC"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:src="@drawable/ic_hotel_id"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="酒店ID"
+                android:inputType="text"
+                android:lines="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="301dp"
+            android:layout_height="1px"
+            android:background="#B5B5B5" />
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:src="@drawable/ic_authorization_code"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="授权码"
+                android:inputType="text"
+                android:lines="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="301dp"
+            android:layout_height="1px"
+            android:background="#B5B5B5" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="301dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/round_corner"
+            android:text="登 录"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginTop="-144dp"
+        android:background="@drawable/ic_bg1" />
+
+    <View
+        android:layout_width="109dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-72dp"
+        android:background="@drawable/ic_logo" />
+
+
+</LinearLayout>

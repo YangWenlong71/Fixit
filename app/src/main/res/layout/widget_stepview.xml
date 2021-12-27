@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:gravity="center"
+            android:background="@drawable/shape_round_hollow"
+            android:text="1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <View
+            android:layerType="software"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@drawable/shape_dotted_line" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:gravity="center"
+            android:background="@drawable/shape_round_hollow"
+            android:text="2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <View
+            android:layerType="software"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@drawable/shape_dotted_line" />
+
+        <TextView
+            android:id="@+id/tv_third"
+            android:gravity="center"
+            android:background="@drawable/shape_round_hollow"
+            android:text="3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
